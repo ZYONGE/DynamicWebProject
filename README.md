@@ -1,6 +1,3 @@
-# DynamicWebProject
-Pynamic Web Project for JSP and SQL
-=======
 
 <div>   
     <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=coffeescript&logoColor=white" alt="Java Coffee Badge" />
@@ -10,6 +7,7 @@ Pynamic Web Project for JSP and SQL
 
 # DynamicWebProject
 this project is Source Code of WebProgramming basic lecture by TUK(Tech University of Korea)
+
 ## Tech Stack
 - **Language**
   - Java
