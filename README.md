@@ -1,3 +1,6 @@
+# DynamicWebProject
+Pynamic Web Project for JSP and SQL
+=======
 
 <div>   
     <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=coffeescript&logoColor=white" alt="Java Coffee Badge" />
@@ -41,5 +44,4 @@ Free to use for study and practice.
 ## Author
 Name: Jiyong Kim (ZYONGE)  
 Profile: https://github.com/ZYONGE  
-
 Motivation: To build a basic JSP web application for university coursework
