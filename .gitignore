@@ -19,3 +19,10 @@ Thumbs.db
 *.log
 *.tmp
 /build/
+/.metadata/
+
+# Eclipse specific
+Servers/
+.project
+.classpath
+.settings/

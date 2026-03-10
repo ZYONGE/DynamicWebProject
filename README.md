@@ -10,7 +10,7 @@ this project is Source Code of WebProgramming basic lecture by TUK(Tech Universi
 
 ## Tech Stack
 - **Language**
-  - Java
+  - Java 17
   - JSP
   - Servlet
 
@@ -21,19 +21,18 @@ this project is Source Code of WebProgramming basic lecture by TUK(Tech Universi
   - Eclipse IDE for Enterprise Java and Web Developers
   - Visual Studio Code
 ## Feature
-  - JSP page routing through links and servlet processing
+  - Basic JSP page navigation using links
 
 
 ## Project Structure
 
 ```
-WebContents/
-
+DynamicWebProject/
+├── Chap_0304/
+├── Chap_(UploadDate)/
+├── Chap_.../
+├── DynamicWebProject_Format/ # Template project format
 ├── .gitignore
-├── Format
-├── Chap_0304
-├── Chap_(Upload date)
-├──...
 └── README.md
 ```
 
