@@ -10,8 +10,8 @@
 도서명 입력: <br><br>
 
 <form action="output.jsp" method="post">
-	도서명: <input type="text" name="book"><br><br>
-	저자: <input type="text" name="author"><br><br>
+	도서명: <input type="text" name="book">
+	저자: <input type="text" name="author">
 	가격: <input type="number" name="price"><br><br>
 	<input type="submit" value="입력">
 </form>
