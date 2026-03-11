@@ -7,17 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-	String bookName = request.getParameter("bookName");
-	String author = request.getParameter("author");
-	int price = Integer.parseInt(request.getParameter("price"));
-%>
 도서명 입력: <br><br>
+
 <form action="output.jsp" method="post">
-<input type="text" name="book" value="<%=bookName%>"><%--get 데이터 입력 --%>
-<input type="text" name="author" value="<%=author%>"><%--get 데이터 입력 --%>
-<input type="number" name="price" value="<%=price%>"><%--get 데이터 입력 --%>
-<input type="submit" value="입력">
+	도서명: <input type="text" name="book"><br><br>
+	저자: <input type="text" name="author"><br><br>
+	가격: <input type="number" name="price"><br><br>
+	<input type="submit" value="입력">
 </form>
 </body>
 </html>

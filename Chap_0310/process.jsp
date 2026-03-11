@@ -43,5 +43,6 @@
 		out.print(hobbies[i] + " ");
 	}
 %>
+<
 </body>
 </html>
