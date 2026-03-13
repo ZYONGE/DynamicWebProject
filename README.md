@@ -13,18 +13,6 @@ Source code for the **Basic Web Programming** course
 
 ---
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [License](#license)
-- [Author](#author)
-- [Motivation](#motivation)
-
----
-
 ## Project Overview
 
 **Course:** Basic Web Programming  
