@@ -2,4 +2,16 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>DynamicWebProject_Format</display-name>
 
+  <context-param>
+    <description>manager</description>
+    <param-name>managerName</param-name>
+    <param-value>김지용</param-value>
+  </context-param>
+
+    <context-param>
+    <description>userNum</description>
+    <param-name>userNum</param-name>
+    <param-value>30</param-value>
+  </context-param>
+
 </web-app>

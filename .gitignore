@@ -26,3 +26,9 @@ Servers/
 .project
 .classpath
 .settings/
+
+# IntelliJ specific
+/.idea/
+/*.iml
+/DynamicWebProject_Format/
+/apache-tomcat-9.0.115/
