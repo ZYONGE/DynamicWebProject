@@ -31,4 +31,5 @@ Servers/
 /.idea/
 /*.iml
 /DynamicWebProject_Format/
+/DynamicWebProject_Format/WebContents/
 /apache-tomcat-9.0.115/
