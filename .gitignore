@@ -30,5 +30,5 @@ Servers/
 # IntelliJ specific
 /.idea/
 /*.iml
-/DynamicWebProject/
+/DynamicWebProject_Format/
 /apache-tomcat-9.0.115/
