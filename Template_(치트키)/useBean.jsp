@@ -12,7 +12,7 @@
 
     학생정보 입력: <br><br><hr>
 
-    <form action="process3.jsp" method="post">
+    <form action="process.jsp" method="post">
         학생이름: <input type="text" name="studName"><br><br>
         학생ID: <input type="text" name="studId"><br><br>
         학생나이: <input type="number" name="age"><br><br>
@@ -39,34 +39,7 @@
 
 </html>
 
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>process.jsp</title>
-</head>
-
-<body>
-    <jsp:useBean id="stud" class="my.info.Student" scope="session"></jsp:useBean>
-    학생이름: <%= stud.getStudName() %><br><br>
-    학생ID: <%= stud.getStudId() %><br><br>
-    학생나이: <%= stud.getAge() %><br><br>
-    학과: <%= stud.getDepart() %><br><br>
-    취미: 
-    <%
-        for(String hobby : stud.getHobby()) {
-            out.print(hobby + ":");
-        }
-    %><br><br>
-    주소: <%= stud.getAddress() %><br><br>
-    
-</body>
-
-</html>
-
+<%--process.jsp--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -84,7 +57,37 @@
 
     <jsp:useBean id="stud" class="my.info.Student" scope="session"/>
     <jsp:setProperty name="stud" property="*"/>
-    <jsp:forward page="output2.jsp"/>   
+    <jsp:forward page="output.jsp"/>   
+</body>
+
+</html>
+
+
+<%--output.jsp--%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>output.jsp</title>
+</head>
+
+<body>
+    <jsp:useBean id="stud" class="my.info.Student" scope="session"></jsp:useBean>
+    학생이름: <%= stud.getStudName() %><br><br>
+    학생ID: <%= stud.getStudId() %><br><br>
+    학생나이: <%= stud.getAge() %><br><br>
+    학과: <%= stud.getDepart() %><br><br>
+    취미: 
+    <%
+        for(String hobby : stud.getHobby()) {
+            out.print(hobby + ":");
+        }
+    %><br><br>
+    주소: <%= stud.getAddress() %><br><br>
+    
 </body>
 
 </html>
