@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            구구단 문제
+        </title>
+    </head>
+    <body>
+    <h3>
+        구구단
+    </h3>
+    <script>
+        let a = Math.floor(Math.random() * 8) + 2; // 2~9
+        let b = Math.floor(Math.random() * 9) + 1; // 1~9
+        let ans = a * b;
+        let user = prompt(a + " × " + b + " = ?");
+        if (parseInt(user) === ans) {
+            document.write("정답입니다! <strong>" + a + " × " + b + " = " + ans + "</strong>");
+        } else {
+            document.write("틀렸습니다! 정답은 <strong>" + ans + "</strong> 입니다.");
+        }
+    </script>
+    </body>
+</html>

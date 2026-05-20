@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Object</title>
+
+        <script>
+            function inquiry(){
+                return this.balance;
+            };
+            function deposit(money){
+                this.balance += money;
+            };
+            function withdraw(money){
+                this.balance -= money;
+            };
+            function calcInterest(){
+                this.balance += this.balance * this.interest;
+            };
+
+            var account = new Object;
+            account.owner = "홍길동";
+            account.code = "111";
+            account.balance = 10000;
+            account.interest = 0.1;
+            account.inquiry = inquiry;
+            account.deposit = deposit;
+            account.withdraw = withdraw;
+            account.calcInterest = calcInterest;
+        </script>
+
+    </head>
+
+    <body>
+    <h3>
+        Object
+    </h3>
+
+    <script>
+        document.write("Account: ");
+        document.write(account.owner +", ");
+        document.write(account.code +", ");
+        document.write(account.balance +", ");
+
+    </script>
+
+    </body>
+</html>
