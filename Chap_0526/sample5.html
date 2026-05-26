@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문서의 동적 구성</title>
+<script>
+function createDIV() {
+  var content = document.getElementById("inputContent").value.trim();
+  var className = document.getElementById("inputClass").value.trim();
+  if (!content || !className) {
+    alert("내용과 클래스명을 모두 입력하세요.");
+    return;
+  }
+  var newDIV = document.createElement("div");
+  newDIV.textContent = content;
+  newDIV.className = className;
+  newDIV.style.backgroundColor = "green";
+  document.getElementById("container").appendChild(newDIV);
+  document.getElementById("inputContent").value = "";
+  document.getElementById("inputClass").value = "";
+}
+
+function deleteDIV() {
+  var className = document.getElementById("deleteClass").value.trim();
+  if (!className) {
+    alert("삭제할 클래스명을 입력하세요.");
+    return;
+  }
+  var targets = document.getElementsByClassName(className);
+  if (targets.length === 0) {
+    alert("해당 클래스명의 DIV가 없습니다.");
+    return;
+  }
+  while (targets.length > 0) {
+    targets[0].parentElement.removeChild(targets[0]);
+  }
+  document.getElementById("deleteClass").value = "";
+}
+</script>
+</head>
+<body>
+  DIV 내용: <input type="text" id="inputContent"><br>
+  DIV 클래스명: <input type="text" id="inputClass"><br>
+  <button onclick="createDIV()">DIV 생성</button>
+
+  <div id="container"></div>
+
+  <hr>
+
+  삭제하고자 하는 div 클래스명 입력: <input type="text" id="deleteClass">
+  <button onclick="deleteDIV()">div 클래스 삭제</button>
+</body>
+</html>

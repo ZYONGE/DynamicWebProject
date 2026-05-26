@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>onclick 버튼 예제</title>
+    <script>
+        function changeStyle(el, size, color, bgColor) {
+            el.style.fontSize = size;
+            el.style.color = color;
+            el.style.backgroundColor = bgColor;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeStyle(this, '30px', 'red', 'yellow')">버튼</button>
+    <button onclick="changeStyle(this, '30px', 'orange', 'blue')">버튼</button>
+    <button onclick="changeStyle(this, '30px', 'grey', 'skyblue')">버튼</button>
+</body>
+</html>

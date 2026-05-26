@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByClassName</title>
+    <script>
+        function printClass() {
+            var items = document.getElementsByClassName("depart");
+            var result = "[ class=\"depart\" 목록 ]\n";
+            for (var i = 0; i < items.length; i++) {
+                result += items[i].innerHTML + "\n";
+            }
+            alert(result);
+        }
+
+        function printId() {
+            var el1 = document.getElementById("id01");
+            var el2 = document.getElementById("id02");
+            alert("[ id 목록 ]\n" + el1.innerHTML + "\n" + el2.innerHTML);
+        }
+
+        function printTag() {
+            var items = document.getElementsByTagName("p");
+            var result = "[ <p> 태그 목록 ]\n";
+            for (var i = 0; i < items.length; i++) {
+                result += items[i].innerHTML + "\n";
+            }
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    <hr>
+
+    <div class="depart">경영학부</div>
+    <div class="depart">컴공</div>
+    <div class="depart">메카</div>
+
+    <hr>
+
+    <div id="id01">김길동</div>
+    <div id="id02">손배상</div>
+
+    <hr>
+
+    <p id="s01">안산</p>
+    <p id="s01">시흥</p>
+
+    <hr>
+
+    <button onclick="printClass()">class 출력</button>
+    <button onclick="printId()">id 출력</button>
+    <button onclick="printTag()">Tag 출력</button>
+</body>
+</html>
