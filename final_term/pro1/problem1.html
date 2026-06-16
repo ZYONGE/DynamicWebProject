@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Problem 1</title>
+</head>
+<body>
+
+<div id="fruitName">사과</div>
+<img id="fruitImg" src="../images/fruit_images/apple.jpeg" width="200" height="200"><br>
+<button onclick="nextFruit()">다음 과일</button>
+
+<script>
+  var fruits = [
+    { name: "사과",   file: "apple.jpeg"  },
+    { name: "바나나", file: "banana.jpeg" },
+    { name: "포도",   file: "grapes.jpeg" },
+    { name: "망고",   file: "mango.jpeg"  },
+    { name: "오렌지", file: "orange.jpeg" }
+  ];
+
+  var current = 0;
+
+  function nextFruit() {
+    current = (current + 1) % fruits.length;
+    document.getElementById("fruitImg").src = "../images/fruit_images/" + fruits[current].file;
+    document.getElementById("fruitName").textContent = fruits[current].name;
+  }
+</script>
+
+</body>
+</html>
+
